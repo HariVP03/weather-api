@@ -20,7 +20,7 @@ def get_format(weather):
 
 def get_weather(city):
 	url='https://api.openweathermap.org/data/2.5/weather'
-	weather_key='5ce7055405b339073b69fa4f47d37779'
+	weather_key=#Hidden
 	params={'APPID': weather_key, 'q': city, 'units': 'imperial'}
 	response= requests.get(url, params=params)
 	weather= response.json()
